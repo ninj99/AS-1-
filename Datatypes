@@ -1,0 +1,88 @@
+using System;
+
+namespace ASSighnment_1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            int a = 10;
+            int b = 10;
+            int c = 10;
+            int d = 10;
+            int e = 10;
+            int f = 10;
+            int g = 10;
+            int h = 10;
+            int i = 10;
+            int j = 10;
+            int k = 10;
+            int sum;
+            
+            sum = a + b + c + d + e + f + g + h + i+j+k;
+            
+            Console.WriteLine(sum);
+            
+            
+            
+                                 
+            double asya = 10.6;  
+            double asyb = 10.6;  
+            double asyc = 10.6;  
+            double asyd = 10.6;  
+            double asye = 10.6;  
+            double asyf = 10.6;  
+            double asyg = 10.6;  
+            double asyh = 10.6;  
+            double asyi = 10.6;  
+            double asyj = 10.6;  
+            double asyk = 10.6;  
+            double sUm ;   
+                                                           
+            sUm =asya + asyb+ asyc + asyd + asye + asyf + asyg + asyh + asyi + asyj + asyk;    
+           
+            Console.WriteLine(sUm);  
+            
+            
+            
+            
+            
+            
+            bool asaa =false;                                                             
+            bool asbb =true;                                                             
+            bool ascc =false;                                                             
+            bool asdd =false;                                                             
+            bool asee =true;                                                             
+            bool asff =false;                                                             
+            bool asgg =true;                                                             
+            bool ashh =false;                                                             
+            bool asii =false;                                                             
+            bool asjj =true;                                                             
+            bool askk =false;
+            bool Sgma;                                                              
+                                                                                
+            Sgma = asaa && asbb && ascc && asdd && asee && asff && asgg && ashh && asii && asjj && askk;
+         
+            Sgma = Sgma || asii ;
+                                                                                
+            Console.WriteLine(Sgma);   
+            
+            
+            float rsya = 3.2f;  
+            float bsyb = 3.2f;  
+            float csyc = 3.2f;  
+            float dsyd = 3.2f;  
+            float esye = 3.2f;  
+            float fsyf = 3.2f;  
+            float gsyg = 3.2f;  
+            float hsyh = 3.2f;  
+            float isyi = 3.2f;  
+            float jsyj = 3.2f;  
+            float ksyk = 3.2f;  
+            float flt ;
+
+            flt = rsya + bsyb + csyc + dsyd + esye + fsyf + gsyg + hsyh + isyi + jsyj + ksyk;
+            Console.WriteLine(flt);
+        }
+    }
+}
