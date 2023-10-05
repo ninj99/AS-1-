@@ -1,0 +1,193 @@
+using System;
+using System.Data;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
+
+class Program
+{
+  //mathod 1 
+    public static void Add(int a, int b)
+    {
+        int sum = a + b;
+        Console.WriteLine(sum);
+    }
+
+    //mathod 2 
+    public static void square()
+    {
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("even / odd number finder");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        Console.WriteLine("enter a number");
+        
+        
+        if (int.TryParse(Console.ReadLine(), out int a) && a%2==0)
+        {
+            Console.WriteLine("you wrote a an even number");
+        }
+        else
+        {
+            Console.WriteLine("you wrote an odd number");
+        }
+    }
+    public static void rectangle()
+    {
+        Console.WriteLine();
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("RECTANGLE AREA FINDER");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        
+        
+        Console.WriteLine("enter a lenght");
+        
+        int a=Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("enter a width");
+        
+        int b=Convert.ToInt32(Console.ReadLine());
+        
+        int area = a * b;
+        
+        Console.WriteLine($"area of rectangle is {area}");
+    }
+    
+//mathod 3 
+    public static void subtract(int a, int b)
+    {
+        int sum = a - b;
+        Console.WriteLine(sum);
+    }
+    
+    //mathod 4 
+    public static void divide(int a, int b)
+    {
+        float sum = a / b;
+        Console.WriteLine(sum);
+    }
+    
+    //mathod 5 
+    public static void emoji()
+    {
+        Console.WriteLine();
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("EMOJI");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        
+        
+        Console.WriteLine("enter a the number of emoji to be display");
+        int a = Convert.ToInt32(Console.ReadLine());
+        int i = 0;
+        while(i < a)
+        {
+            Console.WriteLine("(*_*)");
+            i++;
+        }
+    }
+
+    //mathod 6 
+    public static void sap()
+    {
+        Console.WriteLine();
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("SAP ID FINDER");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        
+        
+        Console.WriteLine("what is your name");
+        string name = Console.ReadLine();
+        if (name == "hassan abdullah" || name == "Hassan Abdullah" ||name == "HASSAN ABDULLAH")
+        {
+            Console.WriteLine("your sap id is 44146 ");
+        }
+        else
+        {
+            Console.WriteLine("unable to find name in database");
+        }
+    }
+    
+    //mathod 7 
+    public static void paragraph()
+    {
+        Console.WriteLine();
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("Paragraph");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        
+        
+        Console.WriteLine("your name ?");
+        string name = Console.ReadLine();
+        
+        Console.WriteLine("your university ?");
+        string uni = Console.ReadLine();
+        
+        Console.WriteLine("your sap id ?");
+        string sap = Console.ReadLine();
+        
+        Console.WriteLine("your course ?");
+        string course = Console.ReadLine();
+        
+        Console.WriteLine("your current semester ?");
+        string sem = Console.ReadLine();
+
+        Console.WriteLine($"Hello, my name is {name}, and I am currently a student at {uni}. My SAP ID is {sap}, and I am pursuing a Bachelor of Science in {course}. I am currently in my {sem} semester");
+        
+    }
+    //mathod 10 
+    public static void rem(int a, int b)
+    {
+        int sum = a % b;
+        Console.WriteLine(sum);
+    }
+    //mathod 8 
+    public static void Grade()
+    {
+        Console.WriteLine();
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine("GRADE FINDER");
+        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
+        
+        
+        Console.WriteLine("your cgpa ?");
+        double marks = Convert.ToDouble(Console.ReadLine());
+
+        if (marks < 1.0)
+        {
+            Console.WriteLine("fail");
+        }
+        else if (marks > 1.0 && marks< 2.0)
+        {
+            Console.WriteLine("D");
+        }
+        else if (marks > 2.0 && marks< 3.0)
+        {
+            Console.WriteLine("c");
+        }
+        
+        else if (marks > 3.0 && marks< 3.8)
+        {
+            Console.WriteLine("A");
+        }
+        
+        else if (marks > 3.8 && marks< 4.0)
+        {
+            Console.WriteLine("FAIL");
+        }
+    }
+    
+    static void Main()
+    {
+        square(); 
+        rectangle();
+        emoji();
+        sap();
+        paragraph();
+        Grade();
+       Console.ReadKey();
+    }
+}
